@@ -1,0 +1,50 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients__list {
+  @extend %list;
+
+  display: flex;
+}
+
+.clients__item {
+  display: block;
+
+  width: calc((100% - 150px) / 6);
+  height: 90px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.clients__link {
+  @extend %link;
+
+  display: flex;
+
+  height: 90px;
+
+  background-color: $color-white;
+  border: 1px solid $color-icon-gray;
+  border-radius: 4px;
+  fill: $color-icon-gray;
+
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(1);
+
+  transition: border-color $time-var $transform-function,
+    fill $time-var $transform-function, transform $time-var $transform-function;
+
+  &:hover,
+  &:focus {
+    border-color: $active-color;
+    fill: $active-color;
+
+    transform: scale(1.2);
+  }
+}

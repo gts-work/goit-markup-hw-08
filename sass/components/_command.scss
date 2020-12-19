@@ -1,0 +1,103 @@
+.command {
+  text-align: center;
+  background-color: $secondary-background-color;
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.command__list {
+  @extend %list;
+
+  display: flex;
+}
+
+.command__image {
+  @include image(inline-block);
+
+  margin-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.command__item {
+  width: calc((100% - 90px) / 4);
+  /* height: 428px; */
+
+  padding-bottom: 30px;
+
+  background: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.command__text-primary {
+  @extend %section-primary-text;
+  @extend %list-p;
+
+  margin-bottom: 10px;
+}
+
+.command__text-secondary {
+  @extend %section-secondary-text;
+  @extend %list-p;
+
+  margin-bottom: 16px;
+}
+
+.command__icon-list {
+  @extend %list;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.command__icon-item {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &:first-child {
+    margin-left: 32px;
+  }
+
+  &:last-child {
+    margin-right: 32px;
+  }
+}
+
+.command__icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  background-color: $color-white;
+  fill: $color-icon-gray;
+
+  padding: 12px;
+  margin-right: auto;
+  margin-left: auto;
+
+  transform: scale(1);
+
+  transition: background-color $time-var $transform-function,
+    fill $time-var $transform-function, transform $time-var $transform-function;
+
+  &:hover,
+  &:focus {
+    background-color: $active-color;
+    fill: $color-white;
+
+    transform: scale(1.2);
+
+    cursor: pointer;
+  }
+}
