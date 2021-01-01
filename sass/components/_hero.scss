@@ -1,3 +1,67 @@
 .hero {
-  background-color: tomato;
+  width: 100%;
+  height: 400px;
+
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/index/hero_mob.jpg"),
+    linear-gradient(to right, $sub-background-color, $sub-background-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  text-align: center;
+  color: $secondary-text-color;
+
+  // background-color: tomato;
+  /* outline: 1px solid tomato; */
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/hero_mob@2x.jpg"),
+      linear-gradient(to right, $sub-background-color, $sub-background-color);
+  }
+}
+
+@media screen and (min-resolution: 3dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/hero_mob@3x.jpg"),
+      linear-gradient(to right, $sub-background-color, $sub-background-color);
+  }
+}
+
+.hero__title {
+  margin-bottom: 30px;
+
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+.hero__button {
+  @extend %button;
 }
