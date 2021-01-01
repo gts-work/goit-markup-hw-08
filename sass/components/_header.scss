@@ -67,6 +67,12 @@
       display: none;
     }
   }
+
+  &:hover,
+  &:focus {
+    // color: $active-color;
+    fill: $active-color;
+  }
 }
 
 .menu-container {

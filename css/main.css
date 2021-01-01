@@ -161,6 +161,10 @@ h6 {
   display: none;
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: #2196f3;
+}
+
 .menu-container {
   display: none;
   position: absolute;
