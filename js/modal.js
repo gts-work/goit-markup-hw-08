@@ -12,6 +12,7 @@
 
     function toggleModal() {
         // console.log('CLICK OPEN!');
+        document.body.classList.toggle('modal-open');
         refs.modal.classList.toggle('is-hidden');
     }
 })();
