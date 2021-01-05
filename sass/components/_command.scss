@@ -43,6 +43,24 @@
   // }
 }
 
+@media screen and (min-width: $media-tab) {
+  .command__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: -15px;
+    margin-bottom: -15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .command__item {
+    width: calc((100% - 2 * 30px) / 2);
+
+    margin: 15px;
+  }
+}
+
 .command__text-primary {
   @extend %section-primary-text;
   @extend %list;
