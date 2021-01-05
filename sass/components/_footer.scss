@@ -15,6 +15,18 @@
   text-align: center;
 }
 
+.container-footer__tab {
+  text-align: center;
+}
+
+@media screen and (min-width: $media-tab) {
+  .container-footer__tab {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
 .container-footer__item {
   // &:not(:last-child) {
   //   display: block;
@@ -126,6 +138,21 @@
 
   background-color: transparent;
   color: $form-email;
+}
+
+@media screen and (min-width: $media-tab) {
+  .form__email {
+    @include form-input(
+      450px,
+      50px,
+      $form-input-border-color,
+      $display: inline-block
+    );
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .btn__submit {
