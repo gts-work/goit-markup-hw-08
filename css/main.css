@@ -699,6 +699,24 @@ body.modal-open {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .features__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+}
+
 .features__title {
   color: #212121;
   font-weight: 700;
