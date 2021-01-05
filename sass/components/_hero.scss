@@ -12,7 +12,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/index/hero_mob.jpg"),
+    url("../images/index/mob/hero_mob.jpg"),
     linear-gradient(to right, $sub-background-color, $sub-background-color);
   background-repeat: no-repeat;
   background-position: center;
@@ -32,7 +32,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/index/hero_mob@2x.jpg"),
+      url("../images/index/mob/hero_mob@2x.jpg"),
       linear-gradient(to right, $sub-background-color, $sub-background-color);
   }
 }
@@ -44,8 +44,81 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/index/hero_mob@3x.jpg"),
+      url("../images/index/mob/hero_mob@3x.jpg"),
       linear-gradient(to right, $sub-background-color, $sub-background-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/tab/hero_tab.jpg"),
+      linear-gradient(to right, $sub-background-color, $sub-background-color);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/index/tab/hero_tab@2x.jpg"),
+        linear-gradient(to right, $sub-background-color, $sub-background-color);
+    }
+  }
+
+  @media screen and (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/index/tab/hero_tab@3x.jpg"),
+        linear-gradient(to right, $sub-background-color, $sub-background-color);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 600px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/index/desctop/hero_desctop.jpg"),
+      linear-gradient(to right, $sub-background-color, $sub-background-color);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/index/desctop/hero_desctop@2x.jpg"),
+        linear-gradient(to right, $sub-background-color, $sub-background-color);
+    }
+  }
+
+  @media screen and (min-resolution: 3dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/index/desctop/hero_desctop@3x.jpg"),
+        linear-gradient(to right, $sub-background-color, $sub-background-color);
+    }
   }
 }
 
