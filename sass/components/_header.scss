@@ -284,7 +284,172 @@
 }
 
 @media screen and (min-width: $media-desctop) {
+  %container-desctop {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    width: 1200px;
+
+    /* outline: 1px solid blue; */
+    // background-color: aqua;
+  }
+
+  %nav-block-desctop {
+    display: inline-flex;
+
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+  %list-desctop {
+    list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  %header-link-desctop {
+    //   display: block;
+    position: relative;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 0;
+
+    color: $secondary-text-color;
+    fill: $secondary-text-color;
+
+    transition: color $time-var $transform-function,
+      fill $time-var $transform-function;
+  }
+
+  %link-desctop {
+    // display: block;
+    display: inline-block;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+  }
+
+  %icon-desctop {
+    display: inline-block;
+
+    vertical-align: middle;
+  }
+
+  .navigator {
+    display: flex;
+    align-items: center;
+  }
+
   .container-header {
-    width: $media-desctop;
+    @extend %container-desctop;
+  }
+
+  .logo {
+    @extend %nav-block-desctop;
+  }
+
+  .logo__icon {
+    @extend %icon-desctop;
+  }
+
+  .contact__icon {
+    @extend %icon-desctop;
+
+    margin-right: 8px;
+  }
+
+  .topmenu {
+    @extend %nav-block-desctop;
+    @extend %list-desctop;
+
+    margin-left: 93px;
+  }
+
+  .contact {
+    @extend %nav-block-desctop;
+    @extend %list-desctop;
+
+    margin-left: auto;
+  }
+
+  .topmenu__item,
+  .contact__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .topmenu__link,
+  .contact__link {
+    @extend %link-desctop;
+    @extend %header-link-desctop;
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: $active-color;
+      fill: $active-color;
+    }
+  }
+
+  .topmenu__link {
+    &::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $active-color;
+
+      transform-origin: 0px 0px;
+      transform: scaleX(0);
+
+      transition: transform $time-var $transform-function,
+        transform-origin $time-var $transform-function;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform-origin: 0% 100%;
+      transform: scaleX(1);
+    }
+
+    &.active::after {
+      content: "";
+
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $active-color;
+
+      opacity: 1;
+
+      transform: scaleX(1);
+    }
   }
 }
