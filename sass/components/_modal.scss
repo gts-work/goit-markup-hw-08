@@ -87,14 +87,6 @@ body.modal-open {
   transition: fill $time-var $transform-function;
 }
 
-// .backdrop.is-hidden .modal {
-//   transform: translateX(-50%) scale(0.5);
-// }
-
-.modal__form {
-  //   position: absolute;
-}
-
 .modal__title {
   display: block;
 
@@ -321,5 +313,27 @@ body.modal-open {
     top: 208px;
     width: 450px;
     height: 610px;
+  }
+}
+
+@media screen and (min-width: $media-desctop) {
+  .backdrop {
+    overflow-y: hidden;
+  }
+
+  .modal {
+    top: 221px;
+    left: 50%;
+
+    width: 530px;
+    height: 580px;
+  }
+
+  .modal__form {
+    position: absolute;
+  }
+
+  .modal-form__field {
+    position: relative;
   }
 }

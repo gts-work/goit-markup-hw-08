@@ -441,6 +441,24 @@ body.modal-open {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .backdrop {
+    overflow-y: hidden;
+  }
+  .modal {
+    top: 221px;
+    left: 50%;
+    width: 530px;
+    height: 580px;
+  }
+  .modal__form {
+    position: absolute;
+  }
+  .modal-form__field {
+    position: relative;
+  }
+}
+
 .navigator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,27 +906,15 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1600px;
+    max-width: 1600px;
     height: 600px;
-    margin-right: auto;
-    margin-left: auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    color: #212121;
     /* outline: 1px solid tomato; */
   }
   .hero__title {
-    margin-bottom: 30px;
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
     color: #ffffff;
   }
 }
