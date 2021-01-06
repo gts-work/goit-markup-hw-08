@@ -818,6 +818,17 @@ body.modal-open {
   /* outline: 1px solid tomato; */
 }
 
+.hero__title {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/index/mob/hero_mob@2x.jpg"), -webkit-gradient(linear, left top, right top, from(#c4c4c4), to(#c4c4c4));
@@ -875,15 +886,31 @@ body.modal-open {
   }
 }
 
-.hero__title {
-  margin-bottom: 30px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.62;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
+@media screen and (min-width: 1200px) {
+  .hero {
+    min-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #212121;
+    /* outline: 1px solid tomato; */
+  }
+  .hero__title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }
 
 .features {
