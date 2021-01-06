@@ -433,6 +433,14 @@ body.modal-open {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .modal {
+    top: 208px;
+    width: 450px;
+    height: 610px;
+  }
+}
+
 .navigator {
   display: -webkit-box;
   display: -ms-flexbox;
