@@ -458,18 +458,6 @@ body.modal-open {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
-  .container-header {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container-header {
-    width: 768px;
-  }
-}
-
 .menu-button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -609,6 +597,88 @@ body.modal-open {
   opacity: 1;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
+}
+
+@media screen and (min-width: 768px) {
+  .container-header {
+    width: 768px;
+  }
+  .navigator {
+    height: 80px;
+  }
+  .menu-button {
+    display: none;
+  }
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .topmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    margin-left: 88px;
+  }
+  .topmenu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0;
+  }
+  .topmenu__item:not(:last-child) {
+    padding-bottom: 0;
+  }
+  .topmenu__link,
+  .contact__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .topmenu__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contact {
+    padding-top: 5px;
+    text-align: left;
+  }
+  .topmenu__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .topmenu__item:not(:last-child) {
+    padding-right: 50px;
+  }
+  .contact__item:not(:last-child) {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-header {
+    width: 1200px;
+  }
 }
 
 .hero {
