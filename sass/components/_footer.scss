@@ -19,14 +19,6 @@
   text-align: center;
 }
 
-@media screen and (min-width: $media-tab) {
-  .container-footer__tab {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-  }
-}
-
 .container-footer__item {
   // &:not(:last-child) {
   //   display: block;
@@ -140,21 +132,6 @@
   color: $form-email;
 }
 
-@media screen and (min-width: $media-tab) {
-  .form__email {
-    @include form-input(
-      450px,
-      50px,
-      $form-input-border-color,
-      $display: inline-block
-    );
-    display: block;
-
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 .btn__submit {
   @extend %button;
 
@@ -176,4 +153,71 @@
   display: inline-block;
 
   fill: $color-white;
+}
+
+@media screen and (min-width: $media-tab) {
+  .container-footer__tab {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+
+  .form__email {
+    @include form-input(
+      450px,
+      50px,
+      $form-input-border-color,
+      $display: inline-block
+    );
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: $media-desctop) {
+  .container-footer {
+    width: 1200px;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container-footer__item {
+    &:not(:last-child) {
+      display: block;
+
+      margin-right: 70px;
+    }
+  }
+
+  .address__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__email {
+    @include form-input(
+      358px,
+      50px,
+      $form-input-border-color,
+      $display: inline-block
+    );
+
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+    background-color: transparent;
+    color: $form-email;
+  }
 }
