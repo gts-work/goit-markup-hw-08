@@ -70,6 +70,8 @@
 @media screen and (min-width: $media-desctop) {
   .clients__list {
     width: $media-desctop;
+
+    margin: -15px;
   }
 
   .clients__item {
