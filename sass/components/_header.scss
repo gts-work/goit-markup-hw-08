@@ -68,11 +68,15 @@
 
   position: absolute;
 
-  top: 80px;
-  left: 0;
+  top: 60px;
+  left: 50%;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
+
+  transform: translateX(-50%) scale(1);
+
+  transition: transform $time-var $transform-function;
 
   &.is-open {
     display: block;
@@ -199,6 +203,16 @@
   }
 }
 
+@media screen and (min-width: $media-mob) {
+  .container-header {
+    width: $media-mob;
+  }
+
+  .menu-container {
+    width: $media-mob;
+  }
+}
+
 @media screen and (min-width: $media-tab) {
   .container-header {
     width: $media-tab;
@@ -227,6 +241,10 @@
 
     background-color: transparent;
     box-shadow: none;
+
+    transform: none;
+
+    transition: none;
   }
 
   .topmenu {

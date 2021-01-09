@@ -516,11 +516,17 @@ body.modal-open {
 .menu-container {
   display: none;
   position: absolute;
-  top: 80px;
-  left: 0;
+  top: 60px;
+  left: 50%;
   padding-top: 60px;
   padding-bottom: 60px;
   width: 100%;
+  -webkit-transform: translateX(-50%) scale(1);
+          transform: translateX(-50%) scale(1);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
@@ -626,6 +632,15 @@ body.modal-open {
           transform: scaleX(1);
 }
 
+@media screen and (min-width: 480px) {
+  .container-header {
+    width: 480px;
+  }
+  .menu-container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container-header {
     width: 768px;
@@ -653,6 +668,10 @@ body.modal-open {
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
   }
   .topmenu {
     display: -webkit-box;
