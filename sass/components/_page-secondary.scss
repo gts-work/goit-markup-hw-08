@@ -1,0 +1,24 @@
+.page-secondary {
+  padding-top: 60px;
+}
+
+.container-portfolio {
+  @extend %container;
+}
+
+@media screen and (min-width: $media-tab) {
+  .container-portfolio {
+    width: $media-tab;
+  }
+}
+
+@media screen and (min-width: $media-desctop) {
+  .page-secondary {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .container-portfolio {
+    width: $media-desctop;
+  }
+}
