@@ -645,17 +645,7 @@ h6 {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
-  .container-footer__tab {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
+@media screen and (min-width: 480px) {
   .form__email {
     display: inline-block;
     position: relative;
@@ -668,6 +658,19 @@ h6 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer__tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 

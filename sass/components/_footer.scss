@@ -155,13 +155,7 @@
   fill: $color-white;
 }
 
-@media screen and (min-width: $media-tab) {
-  .container-footer__tab {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-  }
-
+@media screen and (min-width: $media-mob) {
   .form__email {
     @include form-input(
       450px,
@@ -173,6 +167,14 @@
 
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: $media-tab) {
+  .container-footer__tab {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
   }
 }
 
