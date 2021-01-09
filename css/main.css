@@ -442,10 +442,16 @@ body.modal-open {
   margin-right: 10px;
 }
 
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .modal {
     top: 208px;
-    width: 450px;
+    max-width: 480px;
     height: 610px;
   }
 }

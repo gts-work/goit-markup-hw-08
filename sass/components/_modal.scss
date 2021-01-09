@@ -308,10 +308,16 @@ body.modal-open {
   margin-right: 10px;
 }
 
+@media screen and (min-width: $media-mob) {
+  .modal {
+    max-width: $media-mob;
+  }
+}
+
 @media screen and (min-width: $media-tab) {
   .modal {
     top: 208px;
-    width: 450px;
+    max-width: $media-mob;
     height: 610px;
   }
 }
