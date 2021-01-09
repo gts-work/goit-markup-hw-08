@@ -78,7 +78,7 @@
   width: 100%;
   height: 100%;
 
-  padding: 63px 24px;
+  padding: 27px 24px;
 
   font-weight: 400;
   font-size: 18px;
@@ -130,9 +130,17 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+  .portfolio__card {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: $media-tab) {
+  .portfolio__card {
+    padding: 49px 24px;
+  }
+
   .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -152,6 +160,10 @@
 @media screen and (min-width: $media-desctop) {
   .portfolio {
     width: $media-desctop;
+  }
+
+  .portfolio__card {
+    padding: 63px 24px;
   }
 
   .portfolio__item {

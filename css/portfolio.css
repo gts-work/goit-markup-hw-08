@@ -878,7 +878,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 63px 24px;
+  padding: 27px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -924,9 +924,15 @@ h6 {
     margin-right: auto;
     margin-left: auto;
   }
+  .portfolio__card {
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .portfolio__card {
+    padding: 49px 24px;
+  }
   .portfolio {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -945,6 +951,9 @@ h6 {
 @media screen and (min-width: 1200px) {
   .portfolio {
     width: 1200px;
+  }
+  .portfolio__card {
+    padding: 63px 24px;
   }
   .portfolio__item {
     width: calc((100% - 3 * 30px) / 3);
