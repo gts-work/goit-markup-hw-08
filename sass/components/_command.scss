@@ -147,7 +147,7 @@
   }
 
   .command__item {
-    width: calc((100% - 90px) / 4);
+    width: calc((100% - 4 * 30px) / 4);
 
     margin: 0;
     margin-bottom: 30px;
