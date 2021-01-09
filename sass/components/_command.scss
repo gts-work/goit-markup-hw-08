@@ -99,10 +99,21 @@
   }
 }
 
+@media screen and (min-width: $media-mob) {
+  .command__list {
+    width: $media-mob;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media screen and (min-width: $media-tab) {
   .command__list {
     display: flex;
     flex-wrap: wrap;
+
+    width: $media-tab;
 
     margin-top: -15px;
     margin-bottom: -15px;
@@ -126,6 +137,8 @@
   .command__list {
     display: flex;
     flex-wrap: nowrap;
+
+    width: $media-desctop;
 
     padding-left: 0;
     padding-right: 0;
