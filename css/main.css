@@ -456,9 +456,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: 1200px) {
-  .backdrop {
-    overflow-y: hidden;
-  }
   .modal {
     top: 221px;
     left: 50%;

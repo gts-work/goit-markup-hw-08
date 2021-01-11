@@ -226,7 +226,6 @@ body.modal-open {
 }
 
 .modal__terms {
-  //   @include modal-block(0);
   @include modal-block(10px);
 
   display: flex;
@@ -322,10 +321,6 @@ body.modal-open {
 }
 
 @media screen and (min-width: $media-desctop) {
-  .backdrop {
-    overflow-y: hidden;
-  }
-
   .modal {
     top: 221px;
     left: 50%;
