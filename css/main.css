@@ -238,7 +238,7 @@ body.modal-open {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   color: #212121;
   /* outline: 1px solid tomato; */
 }
@@ -444,15 +444,14 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .modal {
-    max-width: 480px;
+    max-width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     top: 208px;
-    max-width: 480px;
-    height: 610px;
   }
 }
 
@@ -463,14 +462,8 @@ body.modal-open {
   .modal {
     top: 221px;
     left: 50%;
-    width: 530px;
-    height: 580px;
-  }
-  .modal__form {
-    position: absolute;
-  }
-  .modal-form__field {
-    position: relative;
+    max-width: 530px;
+    height: auto;
   }
 }
 

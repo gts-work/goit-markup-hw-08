@@ -99,7 +99,7 @@ body.modal-open {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 
   color: $secondary-text-color;
 
@@ -310,15 +310,14 @@ body.modal-open {
 
 @media screen and (min-width: $media-mob) {
   .modal {
-    max-width: $media-mob;
+    max-width: 450px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: $media-tab) {
   .modal {
     top: 208px;
-    max-width: $media-mob;
-    height: 610px;
   }
 }
 
@@ -331,15 +330,7 @@ body.modal-open {
     top: 221px;
     left: 50%;
 
-    width: 530px;
-    height: 580px;
-  }
-
-  .modal__form {
-    position: absolute;
-  }
-
-  .modal-form__field {
-    position: relative;
+    max-width: 530px;
+    height: auto;
   }
 }
